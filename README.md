@@ -1,6 +1,11 @@
-snake game using python
-
-snake game is developed using python's object oriented programming
-creating the animation for the snake 
-creating score board for the snake
-detecting collision of the snake when it hits the wall or its tail
+Snake-Game
+- This is a classic game can used by the used by the user to move Up, Down, Left, Right using arrowkeys and eating the food and the snake size increases and make sure you don't collide with wall or its own tail.
+- The game was developed using python programming language, Object Oriented Programming, Turtle module, random module, time module and Class Inheritance.
+- The game was divided into 7 steps.
+- Step 1 : Creating the body of the snake using turtle class and its methods and using for loop to loop through each segments and providing a starting position which were set to using Global constants.
+- Step 2 : To create animation of the snake by using tracer() method to turn of the animation  and  update() to update and redraw and again loop through the length of the segment so that the tail follows the head and decreasing the speed to 0.1 to set to sleep.
+- Step 3 : To provide controls to the user by using listen() method to listen to the keystrokes and onkey() method to give keystroke inputs like UP, DOWN,LEFT and RIGHT. And Mkaing sure that which given redirection the snake is not able to move in the opposite direction.
+- Step 4: To Detection of the food and collision. Used Class Inheritance concept to inherit the the methods and attributes from the turtle class. And used distance() method to check if the snake collides with the food if so the food should move to a new random location by using goto() method.
+- Step 5: TO increase the score. Again using Class inheritance concept to inherit the the methods and attributes from the turtle class. And increase the score by 1 and using write() method to to write the score and updating score after collision with the food.
+- Step 6: Collsion with the wall. By using goto() method and check if it reaches certain range. Then the to show the text game over and exiting the while loop.
+- Step 7 : Collsion with the tail. We increase the size of the snake by adding segments to the last element in the segment. Then looping through the segments list and using list slicing method to to exclude the collison of tail with its own tail and cause game over and also to reduce more words in the code.
