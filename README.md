@@ -9,3 +9,10 @@ Snake-Game
 - Step 5: TO increase the score. Again using Class inheritance concept to inherit the the methods and attributes from the turtle class. And increase the score by 1 and using write() method to to write the score and updating score after collision with the food.
 - Step 6: Collsion with the wall. By using goto() method and check if it reaches certain range. Then the to show the text game over and exiting the while loop.
 - Step 7 : Collsion with the tail. We increase the size of the snake by adding segments to the last element in the segment. Then looping through the segments list and using list slicing method to to exclude the collison of tail with its own tail and cause game over and also to reduce more words in the code.
+- In order to improve the game still more further.
+- Added a new feature which keeps track of the high score by replacing the game over sequence with reset feature and to keep track of the high score too.
+- We add a function in the scoreboard.py reset() method to compare with the current score and the highest score and add it to the highest score. that becomes the highest score.
+- And replaced this method in the main.py with by replace the game_is_on= False with the reset() method.
+- And add a new reset() method in snake to start the snake segments from the initial position if it collides with its tail or wall.
+- And faced a problem where the highest score which was attended got lost when the game is exited.
+- Then used reading and writing methods into the text file then initialised the value to int 0 for high_score as it would be converting from string to integer  using write method and then updated the high score to the text file called data.txt.
